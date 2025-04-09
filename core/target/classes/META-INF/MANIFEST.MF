@@ -1,0 +1,40 @@
+Manifest-Version: 1.0
+Bundle-Category: AEM My Learning
+Bundle-Description: Core bundle for AEM My Learning
+Bundle-ManifestVersion: 2
+Bundle-Name: AEM My Learning - Core
+Bundle-SymbolicName: aem-my-learning.core
+Bundle-Version: 0.0.1.SNAPSHOT
+Export-Package: com.adobe.aem.my.learning.core.filters;version="1.0";u
+ ses:="javax.servlet",com.adobe.aem.my.learning.core.listeners;version
+ ="1.0";uses:="org.apache.sling.api.resource.observation",com.adobe.ae
+ m.my.learning.core.models;version="1.0";uses:="javax.annotation,org.a
+ pache.sling.api.resource,org.apache.sling.models.annotations,org.apac
+ he.sling.models.annotations.injectorspecific",com.adobe.aem.my.learni
+ ng.core.schedulers;version="1.0",com.adobe.aem.my.learning.core.servl
+ ets;version="1.0"
+Import-Package: javax.annotation;version="0.0.0",com.adobe.aem.my.lear
+ ning.core.filters;version="[1.0,2)",com.adobe.aem.my.learning.core.li
+ steners;version="[1.0,2)",com.adobe.aem.my.learning.core.schedulers;v
+ ersion="[1.0,2)",com.day.cq.wcm.api;version="[1.29,2)",javax.servlet;
+ version="[3.1,4)",org.apache.sling.api;version="[2.3,3)",org.apache.s
+ ling.api.request;version="[2.4,3)",org.apache.sling.api.resource;vers
+ ion="[2.12,3)",org.apache.sling.api.resource.observation;version="[1.
+ 2,2)",org.apache.sling.models.annotations;version="[1.5,2)",org.apach
+ e.sling.models.annotations.injectorspecific;version="[1.1,2)",org.slf
+ 4j;version="[1.7,2)"
+Provide-Capability: osgi.service;objectClass:List<String>="java.lang.R
+ unnable",osgi.service;objectClass:List<String>="javax.servlet.Filter"
+ ;uses:="javax.servlet",osgi.service;objectClass:List<String>="org.apa
+ che.sling.api.resource.observation.ResourceChangeListener";uses:="org
+ .apache.sling.api.resource.observation"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
+ nent)(version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.e
+ e=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.adobe.aem.my.learning.core.filters.Log
+ gingFilter.xml,OSGI-INF/com.adobe.aem.my.learning.core.listeners.Simp
+ leResourceListener.xml,OSGI-INF/com.adobe.aem.my.learning.core.schedu
+ lers.SimpleScheduledTask.xml
+Sling-Model-Classes: com.adobe.aem.my.learning.core.models.HelloWorldM
+ odel
+

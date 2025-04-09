@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Build-Jdk-Spec: 11
+Implementation-Title: AEM My Learning - All
+Implementation-Version: 0.0.1-SNAPSHOT
+Content-Package-Type: container
+Content-Package-Id: com.adobe.aem.learning:aem-my-learning.all:0.0.1-SNA
+ PSHOT
+Content-Package-Description: All content package for AEM My Learning
+Content-Package-Roots: /apps/learn-packages,/apps/learn-vendor-packages
+

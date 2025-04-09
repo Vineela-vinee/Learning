@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>AEM My Learning - All</comment>
+<entry key="allowIndexDefinitions">false</entry>
+<entry key="created">2025-04-08T13:24:12.697Z</entry>
+<entry key="groupId">com.adobe.aem.learning</entry>
+<entry key="name">aem-my-learning.all</entry>
+<entry key="description">All content package for AEM My Learning</entry>
+<entry key="artifactId">aem-my-learning.all</entry>
+<entry key="version">0.0.1-SNAPSHOT</entry>
+<entry key="packageType">container</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">com.adobe.aem.learning</entry>
+</properties>
